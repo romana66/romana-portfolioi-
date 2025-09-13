@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.card {
+    position: relative;
+    z-index: 1;
+    @apply flex items-start justify-between flex-col overflow-hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    @apply absolute bg-amber-400/10 h-full scale-0 inset-0 w-full duration-600 ease-in-out transition-all;
+}
+
+.card:hover::before {
+    @apply scale-100;
+}
+
+.card a {
+    @apply self-center;
+}
+
+.image-animate {
+    animation: image 5s ease-in-out infinite;
+    -webkit-animation: image 5s ease-in-out infinite;
+}
+
+@keyframes image {
+    0%,100% {
+        transform: translateY(30px) scale(0.8);
+        -webkit-transform: translateY(30px) scale(0.8);
+        -moz-transform: translateY(30px) scale(0.8);
+        -ms-transform: translateY(30px) scale(0.8);
+        -o-transform: translateY(30px) scale(0.8);
+}
+50% {
+    transform: translateX(-30px) scale(1) ;
+    -webkit-transform: translateX(-30px) scale(1) ;
+    -moz-transform: translateX(-30px) scale(1) ;
+    -ms-transform: translateX(-30px) scale(1) ;
+    -o-transform: translateX(-30px) scale(1) ;
+}
+}

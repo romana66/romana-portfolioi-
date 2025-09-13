@@ -1,0 +1,62 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            /* Dark background as per sample */
+            color: #e0e0e0;
+            /* Light text color */
+        }
+
+        .section-padding {
+            padding: 4rem 1rem;
+            /* Responsive padding */
+        }
+
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 4rem;
+            }
+        }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #ff8c00, #ffd700);
+            /* Orange to yellow gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link:hover {
+            color: #ff8c00;
+            /* Orange on hover */
+        }
+
+        .btn-primary {
+            background-color: #ff8c00;
+            /* Orange button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #e67e00;
+            /* Darker orange on hover */
+        }
+        .container-fluid {
+            color: #fdfdfd;
+            text-align: end;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        /* .navbar {
+            background-color: #1a1a1a;
+        } */
+        .logo-card {
+            text-align: center;
+            font-size: 30px;
+        }
+        .logo {
+            margin-top: 12px;
+            font-size: 20px;
+            padding: 50px;
+        }
